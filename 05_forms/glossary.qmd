@@ -33,7 +33,7 @@ When writing papers using HerbVar data, authors should attempt to use a consiste
 **Coefficient of Variation (CV):** The standard deviation divided by the mean. Many data-generating processes result in larger variances when means are larger (e.g., for Poisson processes the variance and mean are equal, by definition). Dividing the standard deviation by the mean helps to “correct” for this relationship, and results in a unitless number so that the CVs can be compared among any data, regardless of the original data units (leaves, area, height, etc.). 
 
 
-:::** {.callout-important title="Important consideration regarding the CV"}
+::: {.callout-important title="Important consideration regarding the CV"}
 
 The CV is popular, but is problematic when the mean is near 0 or negative (as can happen if data can take negative values as well as positive ones), or the variance is extremely large. A recently proposed alternative is bounded by 0 and 1 and is based on second-order distributional moments. It was proposed by @kvalsethAlternativeMeasureOrdinal2017, thus is indicated by $^KCV$, whereas the traditional CV is indicated here by $^PCV$ as it was first proposed by @pearsonMathematicalContributionsTheory1897. As per @lobryCVDeadLong2023, they are related by $^KCV =  \sqrt{\frac{{^PCV}^2}{1 + {^PCV}^2}}$.
 
@@ -59,7 +59,7 @@ The CV is popular, but is problematic when the mean is near 0 or negative (as ca
 
 A strength of the HerbVar dataset is that it contains data for multiple hierarchical scales of organization, from leaves on individual plants, up through populations and species. Patterns in the HerbVar data can be analyzed at multiple scales. Within a manuscript, we recommend people be clear about the scale(s) of analysis, and consistent about which terms are used. 
 
-:::** {.callout-important title="Preferred Terminology"}
+::: {.callout-important title="Preferred Terminology"}
 
 For clarity, we recommend using _“among-...”_ for the unit being measured as the descriptor, rather than alternatives such as _“within-”_ or _“intra-”_ at units larger than the focal measurements. For example, if you are measuring damage on plants within a population, the term _“among-plant”_ should be used rather than _“within-population”_. Ideally, the first mention would say _“among-plants within a population”_.
 
