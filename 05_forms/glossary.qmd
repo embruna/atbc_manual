@@ -1,7 +1,7 @@
 ---
-title-block-style:** plain
-# date:** 11/01/2021
-date-modified:** last-modified
+title-block-style: plain
+# date: 11/01/2021
+date-modified: last-modified
 ---
 
 #  HerbVar Glossary
