@@ -11,14 +11,16 @@ When writing papers using HerbVar data, authors should attempt to use a consiste
  
 
 ## About HerbVar data  
+
 **Herbivory:** Consumption of living plant tissues by animals (i.e. herbivores or omnivores). Many of the HerbVar data on herbivory are about leaf damage done by insects, rather than large mammals; we recommend that authors clarify this at some point in manuscripts.
 
-**Herbivore Damage:** Plant tissue removed or directly injured by herbivore (or omnivore) feeding. Some authors, especially those focused on agriculture, define damage to mean the growth, fitness, or yield consequences of injury, and reserve injury for the direct consumption effects. For consistency with other HerbVar papers, we recommend using ‘damage’.
+**Herbivore Damage:** Plant tissue removed or directly injured by herbivore (or omnivore) feeding. Some authors, especially those focused on agriculture, define damage to mean the growth, fitness, or yield consequences of injury, and reserve injury for the direct consumption effects. For consistency with other HerbVar papers, we recommend using _'damage'_.
 
 **Folivory:** Damage to leaves by animals that consume leaves.
 
 **Frugivory:** Damage to fruits by animals that consume fruits.
-Reproductive damage:** Damage to any reproductive structure, including flowers, fruits, and seeds.
+
+**Reproductive damage:** Damage to any reproductive structure, including flowers, fruits, and seeds.
 
 ## Distributional thinking
 
@@ -32,10 +34,12 @@ Reproductive damage:** Damage to any reproductive structure, including flowers, 
 
 
 :::** {.callout-important title="Important consideration regarding the CV"}
-The CV is popular, but is problematic when the mean is near 0 or negative (as can happen if data can take negative values as well as positive ones), or the variance is extremely large. A recently proposed alternative is bounded by 0 and 1 and is based on second-order distributional moments. It was proposed by @kvalsethAlternativeMeasureOrdinal2017, thus is indicated by $^KCV$, whereas the traditional CV is indicated here by $^PCV$ as it was first proposed by @pearsonMathematicalContributionsTheory1897. They are related by $^KCV =  \sqrt{\frac{{^PCV}^2}{1 + {^PCV}^2}}$ [see @lobryCVDeadLong2023].
+
+The CV is popular, but is problematic when the mean is near 0 or negative (as can happen if data can take negative values as well as positive ones), or the variance is extremely large. A recently proposed alternative is bounded by 0 and 1 and is based on second-order distributional moments. It was proposed by @kvalsethAlternativeMeasureOrdinal2017, thus is indicated by $^KCV$, whereas the traditional CV is indicated here by $^PCV$ as it was first proposed by @pearsonMathematicalContributionsTheory1897. As per @lobryCVDeadLong2023, they are related by $^KCV =  \sqrt{\frac{{^PCV}^2}{1 + {^PCV}^2}}$.
+
 :::
 
-**Gini Coefficient:** The Gini Coefficient is a measure of inequality, rather than variance. It is bounded by 0 and 1, where 0 indicates a perfectly even distribution of a total amount among all individuals, and 1 indicates a perfectly unequal distribution of the total among individuals (all of the total belongs to one individual).  Note that because the Gini is defined by a distribution of a total amount, it does not depend on the mean amount per individual. 
+**Gini Coefficient:** The Gini Coefficient is a measure of inequality, rather than variance. It is bounded by 0 and 1, where 0 indicates a perfectly even distribution of a total amount among all individuals, and 1 indicates a perfectly unequal distribution of the total among individuals (i.e., all of the total belongs to one individual).  Note that because the Gini is defined by a distribution of a total amount, it does not depend on the mean amount per individual. 
 
 **Lorenz curve:** A curve that represents the inequality of a measurement (i.e., herbivory) in a sample. Individual data points are ordered and plotted as cumulative percent of individuals on the x-axis against the cumulative proportion of the measured variable on the y-axis. The 1:1 line represents the line of equality, where all individuals would have the same amounts of herbivory. The polygon connecting to the origin and the maximum (100% of individuals and herbivory) is the basis for the Gini coefficient and the Lorenz asymmetry coefficient. For an in-depth overview of these indices with ecological examples, see @damgaardDescribingInequalityPlant2000.     
 
@@ -47,13 +51,19 @@ The CV is popular, but is problematic when the mean is near 0 or negative (as ca
 
 **Relative Mean Absolute Difference:** The mean absolute difference divided by the arithmetic mean. Like the coefficient of variation (CV), this metric relativizes the mean absolute difference by the mean so that the dispersion of populations with different means can be compared. Like the CV, it is a unitless number. The relative mean absolute difference is equivalent to two times the Gini coefficient.
 
-**Skewness:** A measure of the asymmetry of a distribution. A symmetric distribution, with the same shape of distribution tail in both directions, has a skew of zero. A positive skew indicates a longer tail toward higher values (i.e., the median is to the left of the mean). A negative skew indicates a longer tail to the left. In R, the `sn` package [@azzaliniPackageSnSkewnormal2023] can be useful for working with ‘skew-Normal’ distributions, extensions of Normal (Gaussian) distributions. 
+**Skewness:** A measure of the asymmetry of a distribution. A symmetric distribution, with the same shape of distribution tail in both directions, has a skew of zero. A positive skew indicates a longer tail toward higher values (i.e., the median is to the left of the mean). A negative skew indicates a longer tail to the left. In `R`, the `sn` package [@azzaliniPackageSnSkewnormal2023] can be useful for working with ‘skew-Normal’ distributions and extensions of Normal (Gaussian) distributions. 
 
 **Kurtosis:** A measure of the thickness (“fatness”) of a distribution’s tails.  When a distribution’s tails are thicker, data are more likely to have a high variance and contain larger outliers.
 
 ## Terms specific to the HerbVar data
 
-A strength of the HerbVar dataset is that it contains data for multiple hierarchical scales of organization, from leaves on individual plants, up through populations and species. Patterns in the HerbVar data can be analyzed at multiple scales. Within a manuscript, we recommend people be clear about the scale(s) of analysis, and consistent about which terms are used. For clarity, we recommend using _“among-...”_ for the unit being measured as the descriptor, rather than alternatives such as _“within-”_ or _“intra-”_ at units larger than the focal measurements. For example, if you are measuring damage on plants within a population, the term _“among-plant”_ should be used rather than _“within-population”_. Ideally, the first mention would say _“among-plants within a population”_.
+A strength of the HerbVar dataset is that it contains data for multiple hierarchical scales of organization, from leaves on individual plants, up through populations and species. Patterns in the HerbVar data can be analyzed at multiple scales. Within a manuscript, we recommend people be clear about the scale(s) of analysis, and consistent about which terms are used. 
+
+:::** {.callout-important title="Preferred Terminology"}
+
+For clarity, we recommend using _“among-...”_ for the unit being measured as the descriptor, rather than alternatives such as _“within-”_ or _“intra-”_ at units larger than the focal measurements. For example, if you are measuring damage on plants within a population, the term _“among-plant”_ should be used rather than _“within-population”_. Ideally, the first mention would say _“among-plants within a population”_.
+
+:::
 
 **Among-leaf variation:** This is the smallest scale of HerbVar data, the leaves on a single plant individual. This variation can be quantified using metrics such as the Gini coefficient, the variance, the standard deviation, or a CV.  At this scale, all of the damage is to a single individual, so it has also been called _“within-plant variation”_.  
 
