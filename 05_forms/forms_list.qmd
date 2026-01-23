@@ -11,11 +11,11 @@ These links take you to the GitHub repository page that holds each document. Git
 
 ## Data-Sharing & Usage Agreement {#sec-forms}
 
-- [Data-Sharing and Usage Agreement](https://github.com/HerbVar-Network/herbvar_manual/blob/main/forms/HerbVar-DataSharingContract-D5.pdf) (`.pdf` format)
+- [Data-Sharing and Usage Agreement](https://github.com/HerbVar-Network/herbvar_manual/blob/main/05_forms/HerbVar-DataSharingContract-D5.pdf) (`.pdf` format)
 
 
 <!-- <iframe -->
-<!--   src="https://github.com/HerbVar-Network/herbvar_manual/blob/main/forms/HerbVar-DataSharingContract-D5.pdf" -->
+<!--   src="https://github.com/HerbVar-Network/herbvar_manual/blob/main/05_forms/HerbVar-DataSharingContract-D5.pdf" -->
 <!--   title="iframe Example 1" -->
 <!--   width="400" -->
 <!--   height="300"> -->
@@ -26,18 +26,18 @@ These links take you to the GitHub repository page that holds each document. Git
 
 Use the links to download datasheets for data collection and/or entry
 
-- [HerbVar XLSX Datasheet for electronic data entry](https://github.com/HerbVar-Network/herbvar_manual/blob/main/forms/HerbVar_Datasheet_Template.xlsx)
+- [HerbVar XLSX Datasheet for electronic data entry](https://github.com/HerbVar-Network/herbvar_manual/blob/main/05_forms/HerbVar_Datasheet_Template.xlsx)
 
-- [PRIMARY Datasheet (PDF), printable for use in field](https://github.com/HerbVar-Network/herbvar_manual/blob/main/forms/HV_PRIMARY_Datasheet.pdf)
+- [PRIMARY Datasheet (PDF), printable for use in field](https://github.com/HerbVar-Network/herbvar_manual/blob/main/05_forms/HV_PRIMARY_Datasheet.pdf)
 
-- [REPRO Datasheet (PDF), printable for use in field](https://github.com/HerbVar-Network/herbvar_manual/blob/main/forms/HV_REPRO_Datasheet.pdf)
+- [REPRO Datasheet (PDF), printable for use in field](https://github.com/HerbVar-Network/herbvar_manual/blob/main/05_forms/HV_REPRO_Datasheet.pdf)
 
-- [HERBIVORE Datasheet (PDF), printable for use in field](https://github.com/HerbVar-Network/herbvar_manual/blob/main/forms/HV_HERBIVORE_Datasheet.pdf)
+- [HERBIVORE Datasheet (PDF), printable for use in field](https://github.com/HerbVar-Network/herbvar_manual/blob/main/05_forms/HV_HERBIVORE_Datasheet.pdf)
 
 ## HerbVar Field Guides
 
 Use the links to download printable `.pdf` versions for use in the field. 
 
-- [Illustrated Guide to Percent Leaf Damage](https://github.com/HerbVar-Network/herbvar_manual/blob/main/forms/Illustrated%20Guide%20to%20Percent%20Leaf%20Damage.pdf)
+- [Illustrated Guide to Percent Leaf Damage](https://github.com/HerbVar-Network/herbvar_manual/blob/main/05_forms/Illustrated%20Guide%20to%20Percent%20Leaf%20Damage.pdf)
 
-- [Mines & Galls Cheatsheet](https://github.com/HerbVar-Network/herbvar_manual/blob/main/forms/Cheatsheet_%20mines%20and%20galls.pdf)
+- [Mines & Galls Cheatsheet](https://github.com/HerbVar-Network/herbvar_manual/blob/main/05_forms/Cheatsheet_%20mines%20and%20galls.pdf)
