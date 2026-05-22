@@ -1,0 +1,10 @@
+---
+title: Mission Statement 
+title-block-style: plain
+# date: 09/15/2024
+# date-modified: last-modified
+---
+
+# Mission Statement {#sec-mission}
+
+The Association for Tropical Biology and Conservation is international in scope, membership, and objectives, functioning as an international body to promote research, education, conservation, and communication in tropical biology.  The objectives of ATBC are to promote an awareness of the importance of tropical biology and conservation, to promote research and education in all aspects of tropical biology and conservation, to promote and improve communication and cooperation among investigators, educators, environmental managers, and human communities in the tropics, to inform and influence individuals and institutions whose decisions affect tropical habitats and their biota, and to encourage the preservation of tropical biological diversity and to safeguard it for posterity, for its intrinsic worth and its aesthetic and tangible values to humanity.  

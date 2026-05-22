@@ -3,9 +3,9 @@ project:
   output-dir: docs
   
 book:
-  title: "HerbVar Project Manual & Field Protocols"
-  output-file: "herbvar-manual"
-  author: "The Herbvar Steering Committee"
+  title: "ATBC Manual"
+  output-file: "atbc-manual"
+  author: "ATBC Council"
   date: 11/15/2024
   # date: last-modified
   # original-date: 11/15/2024
@@ -15,79 +15,71 @@ book:
   date-format: long
   license: "This work is licensed under CC BY-NC-SA 4.0. //To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/"
   edition: "v0.9.0"
-  cover-image: images/cover2.png
+  cover-image: images/atbc_cover.png
   search: true
   repo-url: https://github.com/HerbVar-Network/herbvar_manual
   repo-actions: [edit]
   downloads: [pdf, epub]
   # sharing: [twitter, facebook]
   reader-mode: false
-  favicon: images/cover.png
+  favicon: images/atbc_favicon.png
   page-footer:
     left: |
-      HerbVar Project Manual & Field Protocols
+      ATBC Manual
     right: |
       This book was built with <a href="https://quarto.org/">Quarto</a>.
   
   chapters:
     - index.qmd
     
-    - part: "What is HerbVar?"
+    - part: "Bylaws and Key Policies"
       chapters: 
-        - 01_intro/intro.qmd
-        # - 01_intro/getting_involved.qmd
-        - 01_intro/Network_Structure.qmd
-        - 01_intro/data_overview.qmd
-        - 01_intro/herbvar_products.qmd
+        - 01_intro/mission_statement.qmd
+        - 01_intro/bylaws.qmd
+        - 01_intro/coi.qmd
         
-    - part: "Become a Collaborator"
+      
+    - part: "Nominatins & Elections"
       chapters: 
-        - 02_collab/site_pi.qmd
-        - 02_collab/data_use_guidelines.qmd
-        # - 02_collab/new_analyses.qmd
-        - 02_collab/authorship_process.qmd
-        - 02_collab/working-group-pubs.qmd
-        - 02_collab/new_data_collection.qmd
-        # - 02_collab/project_review.qmd
+        - 02_elections/elections.qmd
         
-    - part: "HerbVar Workflow" 
+        
+    - part: "Awards" 
       chapters:
-        - 03_workflow/workflow.qmd
-        # - 03_workflow/upload_data.qmd
-        - 03_workflow/data_analysis.qmd
-        - 03_workflow/publications.qmd
+        - 03_awards/awards.qmd
+        
     
-    - part: "HerbVar Protocols"
+    - part: "Annual Meetings"
       chapters: 
-        - 04_protocols/protocols_overview.qmd
+        - 04_conferences/meetings.qmd
         # - 04_protocols/spp_site_selection.qmd
-        - 04_protocols/primary.qmd
-        - 04_protocols/damage.qmd
-        - 04_protocols/repro_damage.qmd
-        - 04_protocols/low_density.qmd
-        - 04_protocols/succulents.qmd
-        - 04_protocols/tree.qmd
-        - 04_protocols/rhizo_geo.qmd
-        - 04_protocols/herbivore.qmd    
+        # - 04_protocols/primary.qmd
+        # - 04_protocols/damage.qmd
+        # - 04_protocols/repro_damage.qmd
+        # - 04_protocols/low_density.qmd
+        # - 04_protocols/succulents.qmd
+        # - 04_protocols/tree.qmd
+        # - 04_protocols/rhizo_geo.qmd
+        # - 04_protocols/herbivore.qmd    
     
     - references.qmd
     
-    - part: "Appendix 1: Forms & Checklists"
-      chapters: 
-        - 05_forms/onboarding_checklist.qmd
-        # - 05_forms/data_sharing_contract.qmd
-        - 05_forms/forms_list.qmd
-        - 05_forms/glossary.qmd
-        
-    - part: "Appendix 2: HerbVar Admin"
-      chapters: 
-        - 06_admin/potential_collaborators.qmd
-        - 06_admin/manual.qmd
-        - 06_admin/website.qmd
-        - 06_admin/data_portal.qmd
-        - 06_admin/google_drive.qmd
-        - 06_admin/wrangling_repo.qmd
-    
+    # - part: "Appendix 1: Forms & Checklists"
+    #   chapters: 
+    #     - 05_forms/onboarding_checklist.qmd
+    #     # - 05_forms/data_sharing_contract.qmd
+    #     - 05_forms/forms_list.qmd
+    #     - 05_forms/glossary.qmd
+    #     
+    # - part: "Appendix 2: HerbVar Admin"
+    #   chapters: 
+    #     - 06_admin/potential_collaborators.qmd
+    #     - 06_admin/manual.qmd
+    #     - 06_admin/website.qmd
+    #     - 06_admin/data_portal.qmd
+    #     - 06_admin/google_drive.qmd
+    #     - 06_admin/wrangling_repo.qmd
+    # 
 bibliography: HerbVar.bib
 csl: format/ecology.csl
 format:
@@ -100,11 +92,11 @@ format:
   pdf:
     documentclass: scrbook
     classoption: ["oneside", "open=any"]
-    cover-image: images/cover2.png
+    cover-image: images/atbc_cover.png
     # template-partials:
     #   - "04_protocols/title.tex"
     header-includes: |
-      \titlehead{\includegraphics[height=9in]{images/cover2.png}}
+      \titlehead{\includegraphics[height=9in]{images/atbc_cover.png}}
       \publishers{v0.9.0 (Zenodo https://doi.org/10.5281/zenodo.14232308)\\-\\This material is based upon work supported by the National Science Foundation under Award No. NSF DEB-2203582.\\-\\Licensed under CC BY-NC-SA 4.0.}
     toc: true
     toc-depth: 2
@@ -154,7 +146,7 @@ format:
   
       
   epub:
-      epub-cover-image: images/cover2.png
+      epub-cover-image: images/atbc_cover.png
 
 # pdf-engine: xelatex
 # see fpr engine-opt: https://stackoverflow.com/questions/74261557/quarto-rendering-pdf-running-xelatex-faster-in-rstudio    
